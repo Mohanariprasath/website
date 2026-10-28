@@ -1,181 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-.productcontainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-  max-width: 1000px;
-  margin: auto;
-}
-.productcard {
-  background: #fff1dc;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-}
-.productheader {
-  padding: 15px;
-}
-.pricetag {
-  font-size: 13px;
-  color: #333;
-  margin-bottom: 8px;
-}
-.productcard h2 {
-  color: #222;
-  margin: 10px;
-}
-.productcard p {
-  font-size: 14px;
-  color: #555;
-}
-.productcard img {
-  width: 150%;
-  height: 250px;
-}
-        
-.footer {
-  background-color: #15110f;
-  color: #fff;
-  padding: 60px 20px 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  gap: 40px;
-}
-
-.footerbox {
-  flex: 250px;
-}
-
-.footerbox h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.footerbox p {
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-
-.footerbox p i {
-  margin-right: 10px;
-  color: #f4a529;
-}
-
-
-.footer-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-box ul li {
-  margin-bottom: 10px;
-}
-
-.footer-box ul li a {
-  text-decoration: none;
-  color: #ddd;
-  font-size: 15px;
-  margin-right: 8px;
-}
-.footer-bottom {
-  border-top: 1px solid #222;
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #aaa;
-}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Golden Crust</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <section class="Products">
-    <p style="font-weight: bold; color: #f4a529; text-align: center;">// Bakery Products</p><br>
-    <div class="head">
-      <h2 style="text-align: center;">Explore The Categories Of<br>Our Bakery Products</h2><br>
-    </section>
-  <section class="productcontainer">
-  <div class="productcard">
-    <div class="productheader">
-      <span class="pricetag">₹599 - ₹2999</span>
-      <h2>Cake</h2>
-      <p>Deliciously soft and sweet, our cakes are perfect for every celebration.Crafted with love and topped with rich, creamy frosting..</p>
-    </div><br>
-    <img src="jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg" alt="Cake">
-  </div>
-
-  <div class="productcard">
-    <div class="productheader">
-      <span class="pricetag">₹29 - ₹99</span>
-      <h2>Bread</h2>
-      <p>Freshly baked breads with a golden crust and soft, fluffy center.Perfect for sandwiches, toasts, or enjoyed warm with butter.</p>
-    </div><br>
-    <img src="wesual-click-rsWZ-P9FbQ4-unsplash.jpg" alt="Bread">
-  </div>
-
-  <div class="productcard">
-    <div class="productheader">
-      <span class="pricetag">₹29 - ₹120</span>
-      <h2>Cookies</h2>
-      <p>Crispy on the outside, chewy on the inside our cookies are a treat in every bite.Baked with premium ingredients for the perfect sweet snack.</p>
+  <header class="nav">
+    <a href="index.html" class="logo"><i class="fas fa-bread-slice"></i> Golden Crust</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="service.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="call-info">
+        <span class="icon"><i class="fas fa-phone-alt"></i></span>
+        <div>
+          <small>Call Us</small>
+          <strong>+122 333 4444</strong>
+        </div>
+      </div>
+      <button class="cart-btn" type="button" aria-label="View Order Basket">
+        <i class="fas fa-shopping-basket"></i>
+        <span>Order</span>
+        <span class="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-    <img src="sj-YDvfndOs4IQ-unsplash.jpg" alt="Cookies">
+  </header>
+
+  <section class="page-banner">
+    <div>
+      <h1>Bakery Products</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Products</p>
+    </div>
+  </section>
+
+  <div class="products-wrapper">
+    <section class="Products">
+      <p class="sectiontag">// Bakery Products</p>
+      <div class="head">
+        <h2>Explore The Categories Of<br />Our Bakery Products</h2>
+      </div>
+    </section>
+
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all" type="button">All Treats</button>
+      <button class="filter-btn" data-filter="cake" type="button">Cakes</button>
+      <button class="filter-btn" data-filter="bread" type="button">Breads</button>
+      <button class="filter-btn" data-filter="cookies" type="button">Cookies</button>
+    </div>
+
+    <section class="productcontainer">
+      <div class="productcard" data-category="cake">
+        <div class="productheader">
+          <span class="pricetag">₹599 - ₹2999</span>
+          <h2>Cake</h2>
+          <p>Deliciously soft and sweet, our cakes are perfect for every celebration. Crafted with love and topped with rich, creamy frosting.</p>
+        </div>
+        <div class="product-img-wrap">
+          <img src="jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg" alt="Celebration Cake" />
+        </div>
+        <div class="product-actions">
+          <button class="order-btn" type="button" data-name="Signature Celebration Cake" data-price="599">
+            <i class="fas fa-plus-circle"></i> Add to Order (₹599)
+          </button>
+        </div>
+      </div>
+
+      <div class="productcard" data-category="bread">
+        <div class="productheader">
+          <span class="pricetag">₹29 - ₹99</span>
+          <h2>Bread</h2>
+          <p>Freshly baked breads with a golden crust and soft, fluffy center. Perfect for sandwiches, toasts, or enjoyed warm with butter.</p>
+        </div>
+        <div class="product-img-wrap">
+          <img src="wesual-click-rsWZ-P9FbQ4-unsplash.jpg" alt="Artisan Bread" />
+        </div>
+        <div class="product-actions">
+          <button class="order-btn" type="button" data-name="Artisan Sourdough Loaf" data-price="69">
+            <i class="fas fa-plus-circle"></i> Add to Order (₹69)
+          </button>
+        </div>
+      </div>
+
+      <div class="productcard" data-category="cookies">
+        <div class="productheader">
+          <span class="pricetag">₹29 - ₹120</span>
+          <h2>Cookies</h2>
+          <p>Crispy on the outside, chewy on the inside — our cookies are a treat in every bite. Baked with premium ingredients for the perfect sweet snack.</p>
+        </div>
+        <div class="product-img-wrap">
+          <img src="sj-YDvfndOs4IQ-unsplash.jpg" alt="Choco Chip Cookies" />
+        </div>
+        <div class="product-actions">
+          <button class="order-btn" type="button" data-name="Choco Chunk Cookie Box" data-price="99">
+            <i class="fas fa-plus-circle"></i> Add to Order (₹99)
+          </button>
+        </div>
+      </div>
+    </section>
   </div>
-  </section><br><br>
+
+  <div class="cart-modal-backdrop">
+    <div class="cart-modal">
+      <div class="cart-modal-header">
+        <h3><i class="fas fa-shopping-basket"></i> Your Bakery Basket</h3>
+        <button class="cart-close" type="button">&times;</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <span class="cart-total-amount">₹0</span>
+        </div>
+        <button class="btn-primary checkout-btn" type="button" style="width: 100%; justify-content: center;">
+          Place Order Now
+        </button>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-box">
-      <h3>Office Address</h3><br>
-      <p><i class="fas fa-map-marker-alt"></i> 123 Street, Coimbatore, Tamil Nadu</p><br>
-      <p><i class="fas fa-phone-alt"></i> +012 345 67890</p><br>
-      <p><i class="fas fa-envelope"></i> info@example.com</p><br>
-      <div class="footer-socials">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>Office Address</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Street, Coimbatore, Tamil Nadu</p>
+        <p><i class="fas fa-phone-alt"></i> +122 333 4444</p>
+        <p><i class="fas fa-envelope"></i> info@goldencrust.com</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+          <li><a href="service.html"><i class="fas fa-angle-right"></i> Our Services</a></li>
+          <li><a href="products.html"><i class="fas fa-angle-right"></i> Bakery Menu</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Opening Hours</h3>
+        <p><i class="far fa-clock"></i> Mon - Sat: 7:00 AM - 9:30 PM</p>
+        <p><i class="far fa-clock"></i> Sunday: 8:00 AM - 8:00 PM</p>
+        <p><i class="fas fa-bread-slice"></i> Fresh batches baked every morning!</p>
       </div>
     </div>
 
-    <div class="footer-box">
-      <h3>Quick Links</h3><br>
-      <ul>
-        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span>Golden Crust</span>, All Rights Reserved.</p>
     </div>
+  </footer>
 
-    <div class="footer-box">
-      <h3>Quick Links</h3><br>
-      <ul>
-        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© <span>Golden Crust</span>, All Right Reserved.</p>
-  </div>
-</footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,208 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-.contact-section {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 20px;
-  text-align: center;
-  background: #ffffff;
-  color: #333;
-}
-
-.contact-section h2 {
-  font-size: 36px;
-  color: #222;
-  margin-bottom: 20px;
-  line-height: 1.4;
-}
-
-.form-note {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-.form-note a {
-  color: #e29e28;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.form-row input {
-  flex: 1;
-  min-width: 250px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 15px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: none;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form button {
-  background-color: #f4a529;
-  color: white;
-  border: none;
-  padding: 15px;
-  font-size: 16px;
-  border-radius: 30px;
-  max-width: 200px;
-  margin: auto;
-}
-.contact-form button:hover {
-  background-color: #e3911f;
-}
-
-.footer {
-  background-color: #15110f;
-  color: #fff;
-  padding: 60px 20px 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  gap: 40px;
-}
-
-.footerbox {
-  flex: 250px;
-}
-
-.footerbox h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.footerbox p {
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-
-.footerbox p i {
-  margin-right: 10px;
-  color: #f4a529;
-}
-
-
-.footer-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-box ul li {
-  margin-bottom: 10px;
-}
-
-.footer-box ul li a {
-  text-decoration: none;
-  color: #ddd;
-  font-size: 15px;
-  margin-right: 8px;
-}
-.footer-bottom {
-  border-top: 1px solid #222;
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #aaa;
-}
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Golden Crust</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <section class="contact-section">
-  <p style="color: #f4a529; font-weight: bold;">//Contact us</p>
-  <h2>If You Have Any Query,<br>Please Contact Us</h2>
-  <p class="form-note">
-    The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes.
-    Just copy and paste the files, add a little code and you're done.
-    <a href="#">Download Now.</a>
-  </p>
-
-  <form class="contact-form" action="#" method="post">
-    <div class="form-row">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
+  <header class="nav">
+    <a href="index.html" class="logo"><i class="fas fa-bread-slice"></i> Golden Crust</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="service.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="call-info">
+        <span class="icon"><i class="fas fa-phone-alt"></i></span>
+        <div>
+          <small>Call Us</small>
+          <strong>+122 333 4444</strong>
+        </div>
+      </div>
+      <button class="cart-btn" type="button" aria-label="View Order Basket">
+        <i class="fas fa-shopping-basket"></i>
+        <span>Order</span>
+        <span class="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-    <input type="text" name="subject" placeholder="Subject">
-    <textarea name="message" placeholder="Message" rows="6" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-box">
-      <h3>Office Address</h3><br>
-      <p><i class="fas fa-map-marker-alt"></i> 123 Street, Coimbatore, Tamil Nadu</p><br>
-      <p><i class="fas fa-phone-alt"></i> +012 345 67890</p><br>
-      <p><i class="fas fa-envelope"></i> info@example.com</p><br>
-      <div class="footer-socials">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </header>
+
+  <section class="page-banner">
+    <div>
+      <h1>Contact Us</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact Us</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <p class="sectiontag">// Contact Us</p>
+    <h2>If You Have Any Query,<br />Please Contact Us</h2>
+    <p class="form-note">
+      Have a question about custom cakes, bulk event orders, or home delivery? Send us a message below and our team will respond promptly.
+    </p>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" placeholder="Message" rows="6" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+      <div class="form-status"></div>
+    </form>
+  </section>
+
+  <div class="cart-modal-backdrop">
+    <div class="cart-modal">
+      <div class="cart-modal-header">
+        <h3><i class="fas fa-shopping-basket"></i> Your Bakery Basket</h3>
+        <button class="cart-close" type="button">&times;</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <span class="cart-total-amount">₹0</span>
+        </div>
+        <button class="btn-primary checkout-btn" type="button" style="width: 100%; justify-content: center;">
+          Place Order Now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>Office Address</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Street, Coimbatore, Tamil Nadu</p>
+        <p><i class="fas fa-phone-alt"></i> +122 333 4444</p>
+        <p><i class="fas fa-envelope"></i> info@goldencrust.com</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+          <li><a href="service.html"><i class="fas fa-angle-right"></i> Our Services</a></li>
+          <li><a href="products.html"><i class="fas fa-angle-right"></i> Bakery Menu</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Opening Hours</h3>
+        <p><i class="far fa-clock"></i> Mon - Sat: 7:00 AM - 9:30 PM</p>
+        <p><i class="far fa-clock"></i> Sunday: 8:00 AM - 8:00 PM</p>
+        <p><i class="fas fa-bread-slice"></i> Fresh batches baked every morning!</p>
       </div>
     </div>
 
-    <div class="footer-box">
-      <h3>Quick Links</h3><br>
-      <ul>
-        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span>Golden Crust</span>, All Rights Reserved.</p>
     </div>
+  </footer>
 
-    <div class="footer-box">
-      <h3>Quick Links</h3><br>
-      <ul>
-        <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Our Services</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Terms & Condition</a></li>
-        <li><a href="#"><i class="fas fa-angle-right"></i> Support</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© <span>Golden Crust</span>, All Right Reserved.</p>
-  </div>
-</footer>
+  <script src="script.js"></script>
 </body>
 </html>
